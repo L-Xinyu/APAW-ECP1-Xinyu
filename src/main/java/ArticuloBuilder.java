@@ -7,14 +7,14 @@ public class ArticuloBuilder {
     LocalDateTime writeTime;
     ArrayList<Escritor> escritors;
 
-    public ArticuloBuilder(String id,String name,LocalDateTime writeTime){
+    public  ArticuloBuilder(String id,String name,LocalDateTime writeTime){
         this.id = id;
         this.name = name;
         this.writeTime = writeTime;
     }
 
     public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public void Id(String id) { this.id = id; }
 
     public String getName() { return name; }
     public void Name(String name) { this.name = name; }
