@@ -32,8 +32,6 @@ public class ArticuloFactory extends AbstractFactory{
      }
 
 
-
-
     @Override
     public Articulo crear(String articuloId, String articuloName, LocalDateTime articuloTime) {
         myArticulo.put(articuloId,
@@ -46,7 +44,7 @@ public class ArticuloFactory extends AbstractFactory{
     }
 
     @Override
-    public boolean borrar(String articuloId) {
+    public boolean  borrar(String articuloId) {
         if(myArticulo.containsKey(articuloId)){
             myArticulo.remove(articuloId);
             return true;
